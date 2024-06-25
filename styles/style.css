@@ -1,6 +1,6 @@
 :root{
     --bg-primary: #EFEFEF;
-    --bg-gradient: linear-gradient(to bottom, #006494, #1B98E0);
+    --bg-gradient: linear-gradient(to bottom, #13293D,#006494, #1B98E0);
     --dark-blue: #13293D;
     --medium-blue: #006494;
     --light-blue: #1B98E0;
@@ -8,6 +8,7 @@
 
 .container-menu{
     background: var(--bg-gradient);
+    filter: brightness(1.5);
 }
 
 .container-data{
@@ -24,3 +25,36 @@
     color: white;
     filter: brightness(.9);
 }
+
+.input-blue{
+    border: none;
+    background-color: var(--bg-primary);
+    border-bottom: 2px var(--dark-blue) solid;
+    border-radius: 0;
+    transition: none;
+}
+
+.input-blue:focus{
+    box-shadow: 0 0 0 0;
+    background-color: var(--bg-primary);
+    border-bottom: 2px var(--dark-blue) solid;
+    outline: 0;
+} 
+
+.input-blue::placeholder{
+    color: var(--dark-blue);
+}
+
+.textarea-blue{
+    background-color: var(--bg-primary);
+    border: 2px var(--dark-blue) solid;
+    transition: none;
+}
+
+.textarea-blue:focus{
+    box-shadow: 0 0 0 0;
+    background-color: var(--bg-primary);
+    border: 2px var(--dark-blue) solid;
+    outline: 0;
+}
+
