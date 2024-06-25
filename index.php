@@ -9,21 +9,25 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <div class="container">
-        <h2 class="mt-1 mb-1 text-center">Sistema de cadastro</h2>
+    <div class="container-fluid vh-100">
         <div class="row">
-            <div class="container-menu col-3">
-                teste
+            <div class="container-menu col-3 vh-100">
+                <nav class="nav flex-column p-5 gap-4">
+                    <a class="nav-link fs-4 text-reset" href="#">Home</a>
+                    <a class="nav-link fs-4 text-reset" href="#">Clientes</a>
+                    <a class="nav-link fs-4 text-reset" href="#">Produtos</a>
+                </nav>
             </div>
-            <div class="container-data col-9 pt-3">
-                <div class="d-flex gap-2 align-items-center mt-2 mb-3">
+            <div class="container-data col-9 pt-3 p-5 vh-100">
+                <h1 class="mt-2 mb-4 text-center">Sistema de cadastro</h1>
+                <div class="d-flex gap-3 align-items-center mt-2 mb-4">
                     <h4>Lista de Clientes</h4>
-                    <button type="button" class="btn-register btn">Adicionar</button>
+                    <a href="adicionar.php" class="btn btn-blue">Adicionar</a>
                 </div>
                 <table class="table">
                     <thead>
                         <tr>
-                        <th scope="col">Id</th>
+                        <th scope="col">#</th>
                         <th scope="col">Nome</th>
                         <th scope="col">Email</th>
                         <th scope="col">Ações</th>
@@ -34,12 +38,12 @@
                             for($i=0; $i<5; $i++){
                                 echo "                                
                                     <tr>
-                                        <th scope='row'>1</th>
+                                        <th scope='row'>" . $i+1 . "</th>
                                         <td>Mateus</td>
                                         <td>mateus.gc@estudante.iftm.edu.br</td>
                                         <td>
                                             <button type='button' class='btn btn-danger'>Excluir</button>
-                                            <button type='button' class='btn btn-modify'>Modificar</button>
+                                            <button type='button' class='btn btn-blue'>Modificar</button>
                                         </td>
                                     </tr>
                                 ";
