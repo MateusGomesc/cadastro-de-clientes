@@ -1,14 +1,30 @@
 :root{
     --bg-primary: #EFEFEF;
-    --bg-gradient: linear-gradient(to bottom, #13293D,#006494, #1B98E0);
+    --bg-gradient: linear-gradient(to right,#006494, #1B98E0);
     --dark-blue: #13293D;
     --medium-blue: #006494;
     --light-blue: #1B98E0;
 }
 
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/*Menu*/
 .container-menu{
     background: var(--bg-gradient);
-    filter: brightness(1.5);
+    filter: brightness(1.4);
+}
+
+.container-menu nav a{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .container-data{
@@ -57,4 +73,3 @@
     border: 2px var(--dark-blue) solid;
     outline: 0;
 }
-
