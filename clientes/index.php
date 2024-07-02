@@ -46,7 +46,7 @@
                                 <td>
                                     <?php
                                         $date = new DateTimeImmutable($item->date);
-                                        echo $date->format('d-m-Y');
+                                        echo str_replace('-','/', $date->format('d-m-Y'));
                                     ?>
                                 </td>
                                 <td>
@@ -60,7 +60,7 @@
                                     ?>
                                 </td>
                                 <td><?php echo $item->obs ?></td>
-                                <td>
+                                <td class="d-flex flex-column gap-2">
                                     <button type='button' class='btn btn-danger'>Excluir</button>
                                     <button type='button' class='btn btn-blue'>Modificar</button>
                                 </td>

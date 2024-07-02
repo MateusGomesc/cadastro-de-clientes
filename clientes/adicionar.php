@@ -4,12 +4,12 @@
     <?php include '../includes/head.php'; ?>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
+    <div class="container-fluid vh-100">
+        <div class="row h-100">
             <?php include '../includes/menu.php'; ?>
-            <div class="container-data col-9 pt-3 p-5">
+            <div class="container-data col-9 pt-3 p-5 h-100">
                 <h1 class="mt-2 mb-4 text-center">OptiManage</h1>
-                <form action="" class="w-100 grid-center">
+                <form action="add.php" method="POST" class="w-100 grid-center">
                     <div class="mb-4">
                         <label for="name" class="form-label">Nome completo:</label>
                         <input type="text" class="form-control input-blue" name="name" id="name" placeholder="Digite seu nome completo">
