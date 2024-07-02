@@ -1,3 +1,4 @@
+<?php include "../includes/connection.php"; ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
