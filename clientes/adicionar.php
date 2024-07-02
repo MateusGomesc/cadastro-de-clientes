@@ -29,13 +29,13 @@
                     <div class="mb-4">
                         <label for="sexo1" class="form-label">Sexo:</label>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="sexo" id="sexo1" value="Masculino">
+                            <input class="form-check-input" type="radio" name="sexo" id="sexo1" value="1">
                             <label class="form-check-label" for="sexo1">
                                 Masculino
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="sexo" id="sexo2" value="Feminino">
+                            <input class="form-check-input" type="radio" name="sexo" id="sexo2" value="0">
                             <label class="form-check-label" for="sexo2">
                                 Feminino
                             </label>

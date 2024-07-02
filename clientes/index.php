@@ -1,4 +1,13 @@
-<?php include "../includes/connection.php"; ?>
+<?php 
+    include "../includes/connection.php";
+
+    // Receive data from database
+    $sql = "SELECT * FROM clientes";
+    $result = $connection->query($sql);
+
+    // Close connection
+    mysqli_close($connection);
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -17,28 +26,46 @@
                 <table class="table">
                     <thead>
                         <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Nome</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Ações</th>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">CPF</th>
+                            <th scope="col">Data de Nascimento</th>
+                            <th scope="col">Sexo</th>
+                            <th scope="col">Observações</th>
+                            <th scope="col">Ações</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php 
-                            for($i=0; $i<5; $i++){
-                                echo "                                
-                                    <tr>
-                                        <th scope='row'>" . $i+1 . "</th>
-                                        <td>Mateus</td>
-                                        <td>mateus.gc@estudante.iftm.edu.br</td>
-                                        <td>
-                                            <button type='button' class='btn btn-danger'>Excluir</button>
-                                            <button type='button' class='btn btn-blue'>Modificar</button>
-                                        </td>
-                                    </tr>
-                                ";
-                            }
-                        ?>
+                        <?php while($item = mysqli_fetch_object($result)){ ?>                    
+                            <tr>
+                                <th scope='row'><?php echo $item->id ?></th>
+                                <td><?php echo $item->name ?></td>
+                                <td><?php echo $item->email ?></td>
+                                <td><?php echo $item->cpf ?></td>
+                                <td>
+                                    <?php
+                                        $date = new DateTimeImmutable($item->date);
+                                        echo $date->format('d-m-Y');
+                                    ?>
+                                </td>
+                                <td>
+                                    <?php
+                                        if($item->sex){
+                                            echo "Masculino";
+                                        }
+                                        else{
+                                            echo "Feminino";
+                                        }
+                                    ?>
+                                </td>
+                                <td><?php echo $item->obs ?></td>
+                                <td>
+                                    <button type='button' class='btn btn-danger'>Excluir</button>
+                                    <button type='button' class='btn btn-blue'>Modificar</button>
+                                </td>
+                            </tr>
+                        <?php } ?>
                     </tbody>
                 </table>
             </div>
