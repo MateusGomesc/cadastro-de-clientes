@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <?php include './includes/head.php'; ?>
+    <?php include '../includes/head.php'; ?>
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
-            <?php include './includes/menu.php'; ?>
+            <?php include '../includes/menu.php'; ?>
             <div class="container-data col-9 pt-3 p-5">
-                <h1 class="mt-2 mb-4 text-center">Sistema de cadastro</h1>
+                <h1 class="mt-2 mb-4 text-center">OptiManage</h1>
                 <form action="" class="w-100 grid-center">
                     <div class="mb-4">
                         <label for="name" class="form-label">Nome completo:</label>
@@ -52,7 +52,7 @@
         </div>
     </div>
 
-    <?php include './includes/script.php'; ?>
+    <?php include '../includes/script.php'; ?>
 </body>
 
 </html>
