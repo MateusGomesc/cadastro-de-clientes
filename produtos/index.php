@@ -2,7 +2,7 @@
     include "../includes/connection.php";
 
     // Receive data from database
-    $sql = "SELECT * FROM clientes";
+    $sql = "SELECT * FROM produtos";
     $result = $connection->query($sql);
 
     // Close connection
@@ -20,7 +20,7 @@
             <div class="container-data col-9 pt-3 p-5 vh-100">
                 <h1 class="mt-2 mb-4 text-center">OptiManage</h1>
                 <div class="d-flex gap-3 align-items-center mt-2 mb-4">
-                    <h4>Lista de Clientes</h4>
+                    <h4>Lista de produtos</h4>
                     <a href="adicionar.php" class="btn btn-blue">Adicionar</a>
                 </div>
                 <table class="table">
@@ -28,11 +28,8 @@
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Nome</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">CPF</th>
-                            <th scope="col">Data de Nascimento</th>
-                            <th scope="col">Sexo</th>
-                            <th scope="col">Observações</th>
+                            <th scope="col">Preço</th>
+                            <th scope="col">Categoria</th>
                             <th scope="col">Ações</th>
                         </tr>
                     </thead>
@@ -41,25 +38,8 @@
                             <tr>
                                 <th scope='row'><?php echo $item->id ?></th>
                                 <td><?php echo $item->name ?></td>
-                                <td><?php echo $item->email ?></td>
-                                <td><?php echo $item->cpf ?></td>
-                                <td>
-                                    <?php
-                                        $date = new DateTimeImmutable($item->date);
-                                        echo str_replace('-','/', $date->format('d-m-Y'));
-                                    ?>
-                                </td>
-                                <td>
-                                    <?php
-                                        if($item->sex){
-                                            echo "Masculino";
-                                        }
-                                        else{
-                                            echo "Feminino";
-                                        }
-                                    ?>
-                                </td>
-                                <td><?php echo $item->obs ?></td>
+                                <td><?php echo $item->price ?></td>
+                                <td><?php echo $item->category ?></td>
                                 <td class="d-flex flex-column gap-2">
                                     <button type='button' class='btn btn-danger'>Excluir</button>
                                     <button type='button' class='btn btn-blue'>Modificar</button>

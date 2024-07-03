@@ -6,6 +6,6 @@
     <nav class="nav flex-column p-2 mt-2 gap-3" style="color: white;">
         <a class="nav-link fs-4 text-reset fw-light" href="../home">Home</a>
         <a class="nav-link fs-4 text-reset fw-light" href="../clientes">Clientes</a>
-        <a class="nav-link fs-4 text-reset fw-light" href="#">Produtos</a>
+        <a class="nav-link fs-4 text-reset fw-light" href="../produtos">Produtos</a>
     </nav>
 </div>
