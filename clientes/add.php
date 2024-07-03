@@ -13,4 +13,4 @@ include '../includes/connection.php';
 $sql = "INSERT INTO clientes(name, email, cpf, date, sex, obs) VALUES ('$name', '$email', '$cpf', '$date', '$sex',' $obs')";
 $result = $connection->query($sql);
 
-header("locatin: ./ ");
+header("locatin: ./clientes ");

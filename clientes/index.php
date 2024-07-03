@@ -61,8 +61,8 @@
                                 </td>
                                 <td><?php echo $item->obs ?></td>
                                 <td class="d-flex flex-column gap-2">
-                                    <button type='button' class='btn btn-danger'>Excluir</button>
-                                    <button type='button' class='btn btn-blue'>Modificar</button>
+                                    <a type='button' class='btn btn-danger' href=<?php echo "../functions/deleteClient.php?id=" . $item->id ?>>Excluir</a>
+                                    <a type='button' class='btn btn-blue'>Modificar</a>
                                 </td>
                             </tr>
                         <?php } ?>

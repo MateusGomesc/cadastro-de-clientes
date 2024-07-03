@@ -41,7 +41,7 @@
                                 <td><?php echo $item->price ?></td>
                                 <td><?php echo $item->category ?></td>
                                 <td class="d-flex flex-column gap-2">
-                                    <button type='button' class='btn btn-danger'>Excluir</button>
+                                    <a type='button' class='btn btn-danger' href=<?php echo "../functions/deleteProduct.php?id=" . $item->id ?>>Excluir</a>
                                     <button type='button' class='btn btn-blue'>Modificar</button>
                                 </td>
                             </tr>
