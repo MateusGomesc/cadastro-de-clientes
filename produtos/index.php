@@ -42,7 +42,7 @@
                                 <td><?php echo $item->category ?></td>
                                 <td class="d-flex flex-column gap-2">
                                     <a type='button' class='btn btn-danger' href=<?php echo "../functions/deleteProduct.php?id=" . $item->id ?>>Excluir</a>
-                                    <button type='button' class='btn btn-blue'>Modificar</button>
+                                    <a type='button' class='btn btn-blue' href=<?php echo "./adicionar.php?id=" . $item->id ?>>Modificar</a>
                                 </td>
                             </tr>
                         <?php } ?>

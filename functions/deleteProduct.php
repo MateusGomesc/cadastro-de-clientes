@@ -4,8 +4,13 @@ if(isset($_GET['id'])){
     $productId = $_GET['id'];
 
     include '../includes/connection.php';
-    $sql = 'DELETE FROM produtos WHERE id=' . $productId;
 
+    // delete product with id
+    $sql = 'DELETE FROM produtos WHERE id=' . $productId;
     $result = $connection->query($sql);
+
+    // close connection
+    mysqli_close($connection);
+
     header('location: ../produtos');
 }

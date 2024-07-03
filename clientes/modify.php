@@ -1,5 +1,6 @@
 <?php
 
+$clientId = (int) $_GET['id'];
 $name = $_POST['name'];
 $email = $_POST['email'];
 $cpf = $_POST['cpf'];
@@ -10,7 +11,7 @@ $obs = $_POST['obs'];
 include '../includes/connection.php';
 
 // Insert data in database
-$sql = "INSERT INTO clientes(name, email, cpf, date, sex, obs) VALUES ('$name', '$email', '$cpf', '$date', '$sex',' $obs')";
+$sql = "UPDATE `cadastro-de-clientes`.clientes SET name='$name', email='$email', cpf='$cpf', date='$date', sex='$sex', obs='$obs' WHERE id=$clientId";
 $result = $connection->query($sql);
 
 // close connection

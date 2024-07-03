@@ -62,7 +62,7 @@
                                 <td><?php echo $item->obs ?></td>
                                 <td class="d-flex flex-column gap-2">
                                     <a type='button' class='btn btn-danger' href=<?php echo "../functions/deleteClient.php?id=" . $item->id ?>>Excluir</a>
-                                    <a type='button' class='btn btn-blue'>Modificar</a>
+                                    <a type='button' class='btn btn-blue' href=<?php echo "./adicionar.php?id=" . $item->id ?>>Modificar</a>
                                 </td>
                             </tr>
                         <?php } ?>
