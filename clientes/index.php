@@ -14,12 +14,12 @@
     <?php include '../includes/head.php'; ?>
 </head>
 <body>
-    <div class="container-fluid vh-100">
-        <div class="row h-100">
+    <div class="container-fluid">
+        <div class="row d-flex h-100">
             <?php include '../includes/menu.php'; ?>
-            <div class="container-data col-9 pt-3 p-5 vh-100">
+            <div class="container-data col-9 pt-3 p-5 h-100">
                 <h1 class="mt-2 mb-4 text-center">OptiManage</h1>
-                <div class="d-flex gap-3 align-items-center mt-2 mb-4">
+                <div class="d-flex gap-3 align-items-center mt-2 mb-4 h-100">
                     <h4>Lista de Clientes</h4>
                     <a href="adicionar.php" class="btn btn-blue">Adicionar</a>
                 </div>
