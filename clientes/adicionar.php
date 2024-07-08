@@ -11,6 +11,7 @@
         // close connection
         mysqli_close($connection);
         
+        // trasform result in object
         $client = mysqli_fetch_object($result);
     }
     else{
