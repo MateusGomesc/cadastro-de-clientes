@@ -24,7 +24,7 @@
                 <h1 class="mt-2 mb-5 text-center display-4">OptiManage</h1>
                 <div class="d-flex gap-3 align-items-center mt-2 mb-4">
                     <h4>Lista de Clientes</h4>
-                    <a href="adicionar.php" class="btn btn-blue">Adicionar</a>
+                    <a href="form.php" class="btn btn-blue">Adicionar</a>
                 </div>
                 <?php if(!mysqli_num_rows($result)){ ?>
                     <h3>Nenhum cliente encontrado.</h3>
@@ -73,7 +73,7 @@
                                     <td><?php echo $item->obs ?></td>
                                     <td class="d-flex flex-column gap-2">
                                         <a class='btn btn-danger' onclick="deleteClient(<?php echo $item->id; ?>)">Excluir</a>
-                                        <a class='btn btn-blue' href=<?php echo "./adicionar.php?id=" . $item->id ?>>Modificar</a>
+                                        <a class='btn btn-blue' href=<?php echo "./modificar.php?id=" . $item->id ?>>Modificar</a>
                                     </td>
                                 </tr>
                             <?php } ?>
