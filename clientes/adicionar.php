@@ -28,7 +28,7 @@
         <div class="row">
             <?php include '../includes/menu.php'; ?>
             <div class="container-data col-9 pt-3 p-5 h-100">
-                <h1 class="mt-2 mb-4 text-center">OptiManage</h1>
+                <h1 class="mt-2 mb-5 text-center display-4">OptiManage</h1>
                 <form action=<?php
                     if($clientId){
                         echo "modify.php?id=$clientId";
