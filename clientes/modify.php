@@ -1,6 +1,6 @@
 <?php
 
-$clientId = (int) $_GET['id'];
+$clientId = (int) $_POST['id'];
 $name = $_POST['name'];
 $email = $_POST['email'];
 $cpf = $_POST['cpf'];

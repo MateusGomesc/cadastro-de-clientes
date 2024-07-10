@@ -30,7 +30,7 @@
                 <h1 class="mt-2 mb-5 text-center display-4">OptiManage</h1>
                 <form action=<?php 
                     if($productId){
-                        echo "modify.php?id=$productId";
+                        echo "modify.php";
                     }
                     else{
                         echo 'add.php';
@@ -39,6 +39,7 @@
                     method="POST" 
                     class="w-100 grid-center"
                 >
+                    <input type="hidden" name="id" value="<?php echo $productId; ?>">
                     <div class="mb-4">
                         <label for="name" class="form-label">Nome do produto:</label>
                         <input type="text" class="form-control input-blue" name="name" id="name" placeholder="Digite o nome do produto" value="<?php if(isset($product)){ echo $product->name; } ?>">

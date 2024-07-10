@@ -73,7 +73,7 @@
                                     <td><?php echo $item->obs ?></td>
                                     <td class="d-flex flex-column gap-2">
                                         <a class='btn btn-danger' onclick="deleteClient(<?php echo $item->id; ?>)">Excluir</a>
-                                        <a class='btn btn-blue' href=<?php echo "./modificar.php?id=" . $item->id ?>>Modificar</a>
+                                        <a class='btn btn-blue' href=<?php echo "./form.php?id=" . $item->id ?>>Modificar</a>
                                     </td>
                                 </tr>
                             <?php } ?>

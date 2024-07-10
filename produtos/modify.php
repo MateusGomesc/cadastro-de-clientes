@@ -1,6 +1,6 @@
 <?php
 
-$productId = (int) $_GET['id'];
+$productId = (int) $_POST['id'];
 $name = $_POST['name'];
 $category = $_POST['category'];
 $price = $_POST['price'];

@@ -31,7 +31,7 @@
                 <h1 class="mt-2 mb-5 text-center display-4">OptiManage</h1>
                 <form action=<?php
                     if($clientId){
-                        echo "modify.php?id=$clientId";
+                        echo "modify.php";
                     }
                     else{
                         echo 'add.php';
@@ -40,6 +40,7 @@
                     method="POST" 
                     class="w-100 grid-center"
                 >
+                    <input type="hidden" name="id" id="id" value="<?php echo $clientId; ?>">
                     <div class="mb-4">
                         <label for="name" class="form-label">Nome completo:</label>
                         <input type="text" class="form-control input-blue" name="name" id="name" placeholder="Digite seu nome completo" value="<?php if(isset($client)){ echo $client->name; } ?>">

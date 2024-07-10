@@ -6,10 +6,13 @@
     --light-blue: #1B98E0;
 }
 
-body{
-    height: 100vh;
+::-webkit-scrollbar-track{
+    background: var(--bg-primary);
+}
+
+html, body{
+    height: 100%;
     margin: 0;
-    padding: 0;
 }
 
 /*Menu*/
