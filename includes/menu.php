@@ -7,5 +7,6 @@
         <a class="nav-link fs-4 text-reset fw-light" href="../home">Home</a>
         <a class="nav-link fs-4 text-reset fw-light" href="../clientes">Clientes</a>
         <a class="nav-link fs-4 text-reset fw-light" href="../produtos">Produtos</a>
+        <a class="nav-link fs-4 text-reset fw-light" href="../atividades">Atividades</a>
     </nav>
 </div>
