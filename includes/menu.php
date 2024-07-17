@@ -9,5 +9,6 @@
         <a class="nav-link fs-4 text-reset fw-light" href="../produtos">Produtos</a>
         <a class="nav-link fs-4 text-reset fw-light" href="../atividades">Atividades</a>
         <a class="nav-link fs-4 text-reset fw-light" href="../participantes">Participantes</a>
+        <a class="nav-link fs-4 text-reset fw-light" href="../videos">Vídeos</a>
     </nav>
 </div>
