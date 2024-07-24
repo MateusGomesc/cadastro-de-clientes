@@ -48,7 +48,9 @@
                                         ?>
                                     </th>
                                     <td>
-                                        <?php echo $item->titulo ?>
+                                        <a href=<?php echo "./video.php?id=" . $item->id; ?> class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                                            <?php echo $item->titulo ?>
+                                        </a>
                                     </td>
                                     <td>
                                         <a target="_blanck" href=<?php echo "https://www.youtube.com/watch?v=" . $item->video; ?> class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
